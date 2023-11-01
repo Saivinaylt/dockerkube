@@ -1,4 +1,4 @@
 FROM almalinux:8
-# EXPOSE 80/tcp
-CMD [ "facebook.com" ]
-ENTRYPOINT [ "ping", "-c5" ]
+CMD [ "ping", "-c5", "google.com" ]
+# CMD [ "facebook.com" ]
+# ENTRYPOINT [ "ping", "-c5" ]
