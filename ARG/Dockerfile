@@ -3,7 +3,7 @@
 # command id ( docker build --build-arg version=8 -t arg:v1 .)
 # if u want to use the arg variable in container u need to fallow some steps below
 ARG version
-FROM almalinux:${version}
+FROM almalinux:${version:-8}
 ARG greeting
 ENV greet=${greeting}
 RUN echo "${greeting}"
