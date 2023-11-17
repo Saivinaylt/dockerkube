@@ -8,14 +8,9 @@ spec:
     name: stress
     command: ["sleep", "2000"]
     resources:
-    #soft limit when the container was create it create with this resources
       requests:
-       # no of cores
-        cpu: "0.3"
-        # ram
-        memory: "126mi"
-    # its a hard limit the resources will go up to this levels    
+        cpu: "0.2"
+        memory: "126Mi"
       limits:
         cpu: "0.5"
-        # up to ram
-        memory: "150mi"
+        memory: "150Mi"
