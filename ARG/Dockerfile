@@ -6,4 +6,4 @@ ARG version
 FROM almalinux:${version:-8}
 ARG greeting
 ENV greet=${greeting}
-RUN echo "${greeting}
+RUN echo ${greeting}
